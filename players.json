@@ -1,0 +1,106 @@
+[
+    {
+        "jogador": "Pedrinho",
+        "partidas": 2,
+        "gols": 3,
+        "assistencias": 0,
+        "participacoes": 3,
+        "media": 1.5
+    },
+    {
+        "jogador": "Kaue",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    },
+    {
+        "jogador": "Felipe",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    },
+    {
+        "jogador": "Kleber",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 2,
+        "participacoes": 2,
+        "media": 0.0
+    },
+    {
+        "jogador": "Tauan",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    },
+    {
+        "jogador": "Iago",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 2,
+        "participacoes": 2,
+        "media": 0.0
+    },
+    {
+        "jogador": "Rhyan",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    },
+    {
+        "jogador": "Richard",
+        "partidas": 2,
+        "gols": 2,
+        "assistencias": 2,
+        "participacoes": 4,
+        "media": 1.0
+    },
+    {
+        "jogador": "Senhorinho",
+        "partidas": 2,
+        "gols": 3,
+        "assistencias": 1,
+        "participacoes": 4,
+        "media": 1.5
+    },
+    {
+        "jogador": "Leo",
+        "partidas": 2,
+        "gols": 2,
+        "assistencias": 3,
+        "participacoes": 5,
+        "media": 1.0
+    },
+    {
+        "jogador": "Gustavo Gomez",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    },
+    {
+        "jogador": "Junior",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    },
+    {
+        "jogador": "Andreo",
+        "partidas": 2,
+        "gols": 0,
+        "assistencias": 0,
+        "participacoes": 0,
+        "media": 0.0
+    }
+]
