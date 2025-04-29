@@ -7,7 +7,6 @@
     <title>Veneto FC - Portal Oficial</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
-        /* RESET E BASE */
         * {
             margin: 0;
             padding: 0;
@@ -24,7 +23,6 @@
             flex-direction: column;
         }
 
-        /* Telas */
         .screen {
             display: none;
             flex: 1;
@@ -38,7 +36,6 @@
             display: flex;
         }
 
-        /* Página Inicial */
         .glitch-title {
             font-size: 80px;
             color: #FFD700;
@@ -119,7 +116,6 @@
             background-color: #b8860b;
         }
 
-        /* Portal */
         .tabs {
             display: flex;
             flex-wrap: wrap;
@@ -159,19 +155,17 @@
 
         table {
             width: 100%;
-            max-width: 900px;
-            border-collapse: collapse;
             background: rgba(255, 255, 255, 0.95);
             color: #000000;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             border-radius: 8px;
             overflow: hidden;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         th,
         td {
-            padding: 12px 10px;
+            padding: 14px 10px;
             border-bottom: 2px solid #ddd;
             text-align: center;
             font-size: 18px;
@@ -181,6 +175,8 @@
             background-color: #FFD700;
             color: #0b0b0b;
             font-size: 20px;
+            user-select: none;
+            cursor: pointer;
         }
 
         tr:hover {
@@ -191,7 +187,6 @@
             background-color: #f7f7f7;
         }
 
-        /* Responsivo */
         @media (max-width: 768px) {
             .glitch-title {
                 font-size: 50px;
@@ -206,10 +201,6 @@
             td {
                 font-size: 16px;
                 padding: 8px 6px;
-            }
-
-            table {
-                margin-top: 0;
             }
         }
 
@@ -253,13 +244,13 @@
             <table id="statsTable">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Jogador</th>
-                        <th>Partidas</th>
-                        <th>Gols</th>
-                        <th>Assistências</th>
-                        <th>Participações</th>
-                        <th>Média G/P</th>
+                        <th onclick="sortStats(0)">#</th>
+                        <th onclick="sortStats(1)">Jogador</th>
+                        <th onclick="sortStats(2)">Partidas</th>
+                        <th onclick="sortStats(3)">Gols</th>
+                        <th onclick="sortStats(4)">Assistências</th>
+                        <th onclick="sortStats(5)">Participações</th>
+                        <th onclick="sortStats(6)">Média G/P</th>
                     </tr>
                 </thead>
                 <tbody id="statsBody">
@@ -314,6 +305,22 @@
             });
         }
 
+        function sortStats(index) {
+            const keys = ["index", "jogador", "partidas", "gols", "assistencias", "participacoes", "media"];
+            const key = keys[index];
+            const sorted = [...window.playersData].sort((a, b) => {
+                let aValue = key === 'index' ? 0 : a[key];
+                let bValue = key === 'index' ? 0 : b[key];
+                if (typeof aValue === 'string') {
+                    return ascending ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+                } else {
+                    return ascending ? aValue - bValue : bValue - aValue;
+                }
+            });
+            ascending = !ascending;
+            renderStats(sorted);
+        }
+
         async function loadCalendar() {
             const res = await fetch('calendar.json');
             const games = await res.json();
@@ -348,6 +355,7 @@
             document.getElementById('portal').classList.add('active-screen');
         }
 
+        // Carregar dados na inicialização
         loadPlayers();
         loadCalendar();
     </script>
