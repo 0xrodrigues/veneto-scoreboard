@@ -244,11 +244,10 @@
             <table id="statsTable">
                 <thead>
                     <tr>
-                        <th onclick="sortStats(0)">#</th>
                         <th onclick="sortStats(1)">Jogador</th>
-                        <th onclick="sortStats(3)">Gols</th>
-                        <th onclick="sortStats(4)">Assistências</th>
-                        <th onclick="sortStats(5)">Participações</th>
+                        <th onclick="sortStats(2)">Gols</th>
+                        <th onclick="sortStats(3)">Assistências</th>
+                        <th onclick="sortStats(4)">Participações</th>
                     </tr>
                 </thead>
                 <tbody id="statsBody">
@@ -302,11 +301,11 @@
         }
 
         function sortStats(index) {
-            const keys = ["index", "jogador", "gols", "assistencias", "participacoes"];
-            const key = keys[index];
+            const keys = ["jogador", "gols", "assistencias", "participacoes"];
+            const key = keys[index - 1]; // index - 1 porque a primeira coluna é só numérica
             const sorted = [...window.playersData].sort((a, b) => {
-                let aValue = key === 'index' ? 0 : a[key];
-                let bValue = key === 'index' ? 0 : b[key];
+                let aValue = a[key];
+                let bValue = b[key];
                 if (typeof aValue === 'string') {
                     return ascending ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
                 } else {
@@ -316,6 +315,7 @@
             ascending = !ascending;
             renderStats(sorted);
         }
+
 
         async function loadCalendar() {
             const res = await fetch('calendar.json');
