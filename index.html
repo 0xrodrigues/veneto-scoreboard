@@ -294,17 +294,15 @@
           <tr>
             <td>${index + 1}</td>
             <td>${player.jogador}</td>
-            <td>${player.partidas}</td>
             <td>${player.gols}</td>
             <td>${player.assistencias}</td>
             <td>${player.participacoes}</td>
-            <td>${player.media}</td>
           </tr>`;
             });
         }
 
         function sortStats(index) {
-            const keys = ["index", "jogador", "partidas", "gols", "assistencias", "participacoes", "media"];
+            const keys = ["index", "jogador", "gols", "assistencias", "participacoes"];
             const key = keys[index];
             const sorted = [...window.playersData].sort((a, b) => {
                 let aValue = key === 'index' ? 0 : a[key];
