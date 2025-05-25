@@ -1,27 +1,27 @@
 [
     {
-        "jogador": "Pedro",
-        "gols": 6,
+        "jogador": "Pedro Tavares",
+        "gols": 8,
         "assistencias": 0,
-        "participacoes": 6
+        "participacoes": 8
     },
     {
         "jogador": "Pedrinho",
-        "gols": 1,
-        "assistencias": 2,
-        "participacoes": 3
+        "gols": 2,
+        "assistencias": 4,
+        "participacoes": 6
     },
     {
-        "jogador": "Renan",
+        "jogador": "Renan Alves",
         "gols": 1,
         "assistencias": 0,
         "participacoes": 1
     },
     {
-        "jogador": "Matheus",
-        "gols": 3,
-        "assistencias": 0,
-        "participacoes": 4
+        "jogador": "Matheus Batista",
+        "gols": 4,
+        "assistencias": 2,
+        "participacoes": 6
     },
     {
         "jogador": "L. Victor",
@@ -50,14 +50,14 @@
     {
         "jogador": "Tauan",
         "gols": 0,
-        "assistencias": 0,
-        "participacoes": 0
+        "assistencias": 1,
+        "participacoes": 1
     },
     {
         "jogador": "Iago",
-        "gols": 0,
+        "gols": 1,
         "assistencias": 2,
-        "participacoes": 2
+        "participacoes": 3
     },
     {
         "jogador": "Rhyan",
@@ -79,14 +79,20 @@
     },
     {
         "jogador": "Leo",
-        "gols": 2,
+        "gols": 3,
         "assistencias": 4,
-        "participacoes": 5
+        "participacoes": 7
     },
     {
-        "jogador": "Gustavo Gomez",
-        "gols": 0,
+        "jogador": "Gustavo Buzetto",
+        "gols": 1,
+        "assistencias": 1,
+        "participacoes": 2
+    },
+    {
+        "jogador": "Lucas Gino",
+        "gols": 1,
         "assistencias": 0,
-        "participacoes": 0
+        "participacoes": 1
     }
 ]
