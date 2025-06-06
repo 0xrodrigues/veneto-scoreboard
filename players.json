@@ -1,15 +1,15 @@
 [
     {
         "jogador": "Pedro Tavares",
-        "gols": 8,
-        "assistencias": 0,
-        "participacoes": 8
+        "gols": 10,
+        "assistencias": 2,
+        "participacoes": 12
     },
     {
         "jogador": "Pedrinho",
-        "gols": 2,
-        "assistencias": 4,
-        "participacoes": 6
+        "gols": 4,
+        "assistencias": 5,
+        "participacoes": 9
     },
     {
         "jogador": "Renan Alves",
@@ -19,9 +19,9 @@
     },
     {
         "jogador": "Matheus Batista",
-        "gols": 4,
+        "gols": 5,
         "assistencias": 2,
-        "participacoes": 6
+        "participacoes": 7
     },
     {
         "jogador": "L. Victor",
@@ -38,8 +38,8 @@
     {
         "jogador": "Felipe",
         "gols": 0,
-        "assistencias": 0,
-        "participacoes": 0
+        "assistencias": 1,
+        "participacoes": 1
     },
     {
         "jogador": "Kleber",
@@ -79,9 +79,9 @@
     },
     {
         "jogador": "Leo",
-        "gols": 3,
-        "assistencias": 4,
-        "participacoes": 7
+        "gols": 6,
+        "assistencias": 5,
+        "participacoes": 11
     },
     {
         "jogador": "Gustavo Buzetto",
@@ -93,6 +93,12 @@
         "jogador": "Lucas Gino",
         "gols": 1,
         "assistencias": 0,
+        "participacoes": 1
+    },
+    {
+        "jogador": "Fabio Santos",
+        "gols": 0,
+        "assistencias": 1,
         "participacoes": 1
     }
 ]
